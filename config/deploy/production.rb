@@ -54,7 +54,7 @@ server "18.179.203.212",
   roles: %w{web app},
   ssh_options: {
     user: "ec2-user", # overrides user setting above
-    keys: '~/Downloads/dic_sample.pem',
+    keys: %{~/Downloads/dic_sample.pem},
     forward_agent: false,
     auth_methods: %w(publickey password)
 #     # password: "please use keys"
